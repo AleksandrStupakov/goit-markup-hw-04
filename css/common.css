@@ -127,12 +127,12 @@ body {
 }
 
 .header-icon {
-  fill: var(--grey-text);
+  fill: currentColor;
 }
 
 .header-icon:hover,
 .header-icon:focus {
-  fill: var(--blue);
+  fill: currentColor;
 }
 
 .site-nav .link.current,
@@ -176,6 +176,9 @@ img {
 
 .down {
   background-color: var(--black-background);
+}
+
+.down .container {
   max-width: 1600px;
   height: 252px;
   margin-left: auto;
@@ -205,6 +208,11 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+
+.list-team {
+  display: flex;
+  justify-content: center;
 }
 
 .social-team {

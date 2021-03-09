@@ -65,6 +65,13 @@
   height: 120px;
   padding: 25px 100px;
   background-color: var(--grey-light-background);
+  border-radius: 4px;
+}
+
+.fora-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .center {
@@ -98,6 +105,10 @@
   margin-bottom: 0;
 }
 
+.team {
+  background-color: var(--grey-light-background);
+}
+
 .mide-title,
 .title-clients {
   font-size: 36px;
@@ -119,6 +130,7 @@
 
 .spets {
   padding-bottom: 30px;
+  background-color: var(--white-text);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -138,32 +150,27 @@
   text-align: center;
 }
 
-.social-item {
+.social-link {
   width: 44px;
   height: 44px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  color: rgba(175, 177, 184, 1);
 }
 
-.social-item:hover,
-.social-item:focus {
-  fill: var(--white-text);
+.social-link:hover,
+.social-link:focus {
   background-color: var(--blue);
-  border-radius: 50%;
+  color: var(--white-text);
 }
 
 .social-icon {
-  fill: rgba(175, 177, 184, 1);
+  fill: currentColor;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.social-icon:hover {
-  fill: var(--white-text);
-  background-color: var(--blue);
 }
 
 .social-item + .social-item {
@@ -179,13 +186,6 @@
 
 .company {
   display: block;
-  width: 170px;
-  height: 90px;
-  padding-top: 20px;
-  border: 1px solid rgba(175, 177, 184, 1);
-  border-radius: 4px;
-  align-items: center;
-  justify-content: center;
 }
 
 .clients .company + .company {
@@ -194,18 +194,25 @@
 
 .logocompany {
   display: flex;
-  justify-content: center;
+  width: 170px;
+  height: 90px;
+  color: rgba(175, 177, 184, 1);
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
   align-items: center;
+  justify-content: center;
 }
 
 .logocompany-icon {
-  fill: rgba(175, 177, 184, 1);
+  fill: currentColor;
   display: flex;
   justify-content: center;
   align-items: center;
   background-size: contain;
 }
 
-.logocompany-icon:hover {
-  fill: var(--blue);
+.logocompany:hover,
+.logocompany:focus {
+  color: var(--blue);
+  border: 1px solid var(--blue);
 }
